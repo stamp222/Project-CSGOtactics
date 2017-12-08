@@ -35,19 +35,28 @@ and open the template in the editor.
             <div class="col-md-3">
                 <h1>CS Tactics Maker</h1>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-6">
                 <button type="button" class="btn btn-danger" id="drawLine">Rysuj linię.</button>
                 <button type="button" class="btn btn-danger grenade" value="HE">Dodaj granat wybuchowy</button>
                 <button type="button" class="btn btn-danger grenade" value="Flash">Dodaj granat błyskowy</button>
                 <button type="button" class="btn btn-danger grenade" value="Smoke">Dodaj granat dymny</button>
-            </div>       
+            </div>
+            <div class="col-md-3">
+                <label>Mapa</label>
+                <select class="check">
+                    <option value="select">Wybierz mapę</option>
+                    <option value="dust2">Dust 2</option> // selected="selected"
+                    <option value="inferno">Inferno</option>
+                    <option value="nuke">Nuke</option>
+                </select>
+            </div>
         </div>
         
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <canvas id="canvas" width=1000px% height="560" style="border:1px solid #000000;">Ogarnij canvasa!</canvas>
-                </div>-- 1400 800
+                    <canvas id="canvas2" width=1000px% height="560" style="border:1px solid #000000;">Ogarnij canvasa!</canvas>
+                </div>// 1400 800
             </div>
         </div>
     </body>

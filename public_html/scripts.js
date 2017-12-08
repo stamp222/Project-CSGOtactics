@@ -9,13 +9,7 @@ var clicked = false;
 var mc = new MouseCords();
 
 $(document).ready(function(){  
-    var canvas = document.querySelector('#canvas');
     var mc = new MouseCords();
-  
-    canvas.addEventListener('mousemove', function(event) {
-        var rect = canvas.getBoundingClientRect();
-//        console.log(`Drugi header! x: + ${event.clientX - rect.left} +  y: ${event.clientY - rect.top}`);
-    }, false); 
     
     $('#drawLine').click(function(){
         console.log("Kliknie drawLine");
@@ -30,9 +24,13 @@ $(document).ready(function(){
         else console.log("Nie ma takiego granatu lub coś poszło nie tak.");  
     });
     
-    canvas.addEventListener('click', function(event) {
+    $("#canvas2").on("mousemove", function(event){
         var rect = canvas.getBoundingClientRect();
-        var ctx = canvas.getContext('2d');
+//        console.log(`Drugi header! x: + ${event.clientX - rect.left} +  y: ${event.clientY - rect.top}`);
+    }, false); 
+    $("#canvas2").on("click", function(event){
+        var rect = $("#canvas2")[0].getBoundingClientRect();
+        var ctx = $("#canvas2")[0].getContext('2d');
 
         if(actualTask === "drawLine"){
             if(clicked === false){ 

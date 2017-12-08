@@ -8,8 +8,8 @@ body {
     margin-top: 20px;
 }
 
-#canvas {
-    background-image: url("maps/dust2.png");
+#canvas2 {
+    background-image: url("maps/inferno.png");
     background-size: 100% 100%;
 }
 
