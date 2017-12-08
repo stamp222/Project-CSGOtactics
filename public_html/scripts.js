@@ -25,9 +25,10 @@ $(document).ready(function(){
     });
     
     $("#canvas2").on("mousemove", function(event){
-        var rect = canvas.getBoundingClientRect();
+        var rect = $("#canvas2")[0].getBoundingClientRect();
 //        console.log(`Drugi header! x: + ${event.clientX - rect.left} +  y: ${event.clientY - rect.top}`);
     }, false); 
+    
     $("#canvas2").on("click", function(event){
         var rect = $("#canvas2")[0].getBoundingClientRect();
         var ctx = $("#canvas2")[0].getContext('2d');
@@ -69,5 +70,29 @@ $(document).ready(function(){
                 ctx.drawImage(base_image, event.clientX - rect.left, event.clientY - rect.top);
             };
         }      
+    });
+    
+    $("#check").change(function(event){
+        var rect = $("#canvas2")[0].getBoundingClientRect();
+        var ctx = $("#canvas2")[0].getContext('2d');
+        
+        if($("#check option:selected").val() === "dust2"){
+            $("#canvas2").css("background-image", 'url("maps/dust2.jpg")');
+        }
+        else if($("#check option:selected").val() === "inferno"){
+            $("#canvas2").css("background-image", 'url("maps/inferno.jpg")');
+        }
+        else if($("#check option:selected").val() === "mirage"){
+            $("#canvas2").css("background-image", 'url("maps/mirage.jpg")');
+        }
+        else if($("#check option:selected").val() === "overpass"){
+            $("#canvas2").css("background-image", 'url("maps/overpass.jpg")');
+        }
+        else if($("#check option:selected").val() === "train"){
+            $("#canvas2").css("background-image", 'url("maps/train.jpg")');
+        }
+        else if($("#check option:selected").val() === "cache"){
+            $("#canvas2").css("background-image", 'url("maps/cache.jpg")');
+        }
     });
 });
