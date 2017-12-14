@@ -10,9 +10,5 @@ body {
 
 #canvas2 {
     background-image: url("maps/dust2.jpg");
-    background-size: 100% 100%;
-}
-
-.asdf {
-    margin-left: 0px;
+    background-size: 1200px 1200px;
 }

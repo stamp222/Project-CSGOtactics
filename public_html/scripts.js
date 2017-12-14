@@ -10,6 +10,7 @@ var mc = new MouseCords();
 
 $(document).ready(function(){  
     var mc = new MouseCords();
+    canvas = $("#canvas2")[0];
     
     $('#drawLine').click(function(){
         console.log("Kliknie drawLine");
@@ -94,5 +95,12 @@ $(document).ready(function(){
         else if($("#check option:selected").val() === "cache"){
             $("#canvas2").css("background-image", 'url("maps/cache.jpg")');
         }
+//        console.log($("#canvas2") + "#Canvas2");
+//        console.log($("#canvas2")[0] + "#Canvas2[0]");
+//        console.log($("#canvas2")[0].height + " :#Canvas2[0].height");
+//        console.log($("#canvas2")[0].width + " :#Canvas2[0].width");
+//        console.log($("#canvas2").height + "#Canvas2.height");
+        ctx.clearRect(0, 0, canvas.height, canvas.width);
+        
     });
 });
