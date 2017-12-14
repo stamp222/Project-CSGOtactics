@@ -1,3 +1,5 @@
+"use strict";
+
 class MouseCords{
     constructor(){
         this.x = 0;
@@ -10,7 +12,9 @@ var mc = new MouseCords();
 
 $(document).ready(function(){  
     var mc = new MouseCords();
-    canvas = $("#canvas2")[0];
+    var canvas = $("#canvas2")[0];
+    var rect = $("#canvas2")[0].getBoundingClientRect();
+    var ctx = $("#canvas2")[0].getContext('2d');
     
     $('#drawLine').click(function(){
         console.log("Kliknie drawLine");
@@ -54,7 +58,7 @@ $(document).ready(function(){
         }
         
         if(actualTask === "HE" || actualTask === "Flash" || actualTask === "Smoke"){
-            base_image = new Image();           
+            var base_image = new Image();           
             switch (actualTask){
                 case "HE":
                     base_image.src = 'icons/he.png';//img/base.png
@@ -73,10 +77,7 @@ $(document).ready(function(){
         }      
     });
     
-    $("#check").change(function(event){
-        var rect = $("#canvas2")[0].getBoundingClientRect();
-        var ctx = $("#canvas2")[0].getContext('2d');
-        
+    $("#check").change(function(event){       
         if($("#check option:selected").val() === "dust2"){
             $("#canvas2").css("background-image", 'url("maps/dust2.jpg")');
         }
@@ -95,11 +96,7 @@ $(document).ready(function(){
         else if($("#check option:selected").val() === "cache"){
             $("#canvas2").css("background-image", 'url("maps/cache.jpg")');
         }
-//        console.log($("#canvas2") + "#Canvas2");
-//        console.log($("#canvas2")[0] + "#Canvas2[0]");
-//        console.log($("#canvas2")[0].height + " :#Canvas2[0].height");
-//        console.log($("#canvas2")[0].width + " :#Canvas2[0].width");
-//        console.log($("#canvas2").height + "#Canvas2.height");
+
         ctx.clearRect(0, 0, canvas.height, canvas.width);
         
     });
