@@ -1,6 +1,26 @@
 body {
     background-image: url("cs.webp");
     background-size: cover;
+}
+
+.oblicze {
+    background-image: url("maps/dust2.jpg");
+    background-size: 100% 75%;
+    border:1px solid #000000;
+}
+.mapy {
+     width: 200px;
+}
+#canvas{
+    width:320px;
+    height:256px;
+    overflow:hidden;
+    border:1px solid #000000;
+}
+
+/*body {
+    background-image: url("cs.webp");
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -17,4 +37,4 @@ body {
 
 #con {
     height: 55rem;
-}
+}*/

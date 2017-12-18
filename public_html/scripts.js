@@ -13,8 +13,6 @@ var mc = new MouseCords();
 $(document).ready(function(){  
     var mc = new MouseCords();
     var canvas = $("#canvas2")[0];
-    canvas.width = 1200;
-    canvas.height = 1200;
     var rect = $("#canvas2")[0].getBoundingClientRect();
     var ctx = $("#canvas2")[0].getContext('2d');
     
