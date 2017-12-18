@@ -32,29 +32,33 @@ and open the template in the editor.
     </head>
     <body>
         <div>
-            <div>
-                <div id="canvasMenu">
-                    <div>
-                        <button type="button" class="btn btn-danger" id="drawLine">Rysuj linię.</button>
-                        <button type="button" class="btn btn-danger grenade" value="HE">Dodaj granat wybuchowy</button>
-                        <button type="button" class="btn btn-danger grenade" value="Flash">Dodaj granat błyskowy</button>
-                        <button type="button" class="btn btn-danger grenade" value="Smoke">Dodaj granat dymny</button>
-                    </div>
-                    <div>
-                        <select id="check" class="form-control">
-                            <option value="dust2">Dust 2</option> // selected="selected"
-                            <option value="inferno">Inferno</option>
-                            <option value="mirage">Mirage</option>
-                            <option value="cache">Cache</option>
-                            <option value="overpass">Overpass</option>
-                            <option value="train">Train</option>
-                        </select>
-                    </div>
+            <div id="canvasMenu">
+                <div>
+                    <h3>Gracze</h2>
+                    <label id="player1">Adam</label>
+                    <label id="player2">Jacek</label>
+                    <label id="player3">Adrian</label>
+                    <label id="player4">Pudzilla</label>
+                    <label id="player5">Putin</label>
+                    <button type="button" class="btn btn-danger" id="drawLine">Rysuj linię.</button>
+                    <button type="button" class="btn btn-danger grenade" value="HE">Dodaj granat wybuchowy</button>
+                    <button type="button" class="btn btn-danger grenade" value="Flash">Dodaj granat błyskowy</button>
+                    <button type="button" class="btn btn-danger grenade" value="Smoke">Dodaj granat dymny</button>
                 </div>
-                <div id="canvasDiv">
-                    <canvas id="canvas2"></canvas>
+                <div>
+                    <select id="check" class="form-control">
+                        <option value="dust2">Dust 2</option> // selected="selected"
+                        <option value="inferno">Inferno</option>
+                        <option value="mirage">Mirage</option>
+                        <option value="cache">Cache</option>
+                        <option value="overpass">Overpass</option>
+                        <option value="train">Train</option>
+                    </select>
                 </div>
-            </div>          
+            </div>
+            <div id="canvasDiv">
+                <canvas id="canvas2"></canvas>
+            </div>       
         </div>
 <!--        <div class="row">
             <div class="col-md-3">

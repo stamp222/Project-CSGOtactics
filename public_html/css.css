@@ -20,7 +20,8 @@ body {
     width: 20%;
     height: 50%;
     float: left;
-    background-color: blue;
+    background-color: #b24c95;
+    text-align: center;
 }
 
 #canvasDiv {
@@ -28,4 +29,8 @@ body {
     height: 50%;
     float: right;
     background-color: red;
+}
+
+#canvasMenu button, label{
+    width: 100%;
 }
