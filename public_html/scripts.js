@@ -1,22 +1,24 @@
 "use strict";
 
-class MouseCords{
+class Coordinates{
     constructor(){
         this.x = 0;
         this.y = 0;
     }
 }
+
 var actualTask = "";
 var clicked = false;
-var mc = new MouseCords();
+var mc = new Coordinates();
 
 $(document).ready(function(){  
-    var mc = new MouseCords();
     var canvas = $("#canvas2")[0];
-    canvas.width = 1200;
-    canvas.height = 1200;
-    var rect = $("#canvas2")[0].getBoundingClientRect();
-    var ctx = $("#canvas2")[0].getContext('2d');
+    
+    canvas.width = 600;
+    canvas.height = 600;
+    
+    var rect = canvas.getBoundingClientRect();
+    var ctx = canvas.getContext('2d');
     
     $('#drawLine').click(function(){
         console.log("Kliknie drawLine");
@@ -32,8 +34,7 @@ $(document).ready(function(){
     });
     
     $("#canvas2").on("mousemove", function(event){
-        var rect = $("#canvas2")[0].getBoundingClientRect();
-//        console.log(`Drugi header! x: + ${event.clientX - rect.left} +  y: ${event.clientY - rect.top}`);
+        var rect = canvas.getBoundingClientRect();
     }, false); 
     
     $("#canvas2").on("click", function(event){
@@ -43,14 +44,15 @@ $(document).ready(function(){
         if(actualTask === "drawLine"){
             if(clicked === false){ 
                 clicked = true;               
-                mc.x = event.clientX - rect.left;
-                mc.y = event.clientY - rect.top;
+                mc.x = event.clientX;
+                mc.y = event.clientY;
+                //console.log(`Event.clientX: ${event.clientX}, rect.left: ${rect.left}`);
                 console.log(`Kliknieto: x = ${mc.x}, y = ${mc.y}`);
             }
             else {
                 ctx.beginPath();
                 ctx.moveTo(mc.x, mc.y);
-                ctx.lineTo(event.clientX - rect.left, event.clientY - rect.top);
+                ctx.lineTo(event.clientXt, event.clientY);
                 console.log(`Narysowano kreskie z: x = ${mc.x}, y = ${mc.y} do ${event.clientX - rect.left} do ${event.clientY - rect.top}`);
                 ctx.lineWidth = 5;
                 ctx.stroke();
@@ -74,7 +76,7 @@ $(document).ready(function(){
                     break;                    
             }
             base_image.onload = function(){
-                ctx.drawImage(base_image, event.clientX - rect.left, event.clientY - rect.top);
+                ctx.drawImage(base_image, event.clientX, event.clientY - rect.top);
             };
         }      
     });
@@ -99,7 +101,6 @@ $(document).ready(function(){
             $("#canvas2").css("background-image", 'url("maps/cache.jpg")');
         }
 
-        ctx.clearRect(0, 0, canvas.height, canvas.width);
-        
+        ctx.clearRect(0, 0, canvas.height, canvas.width);       
     });
 });
