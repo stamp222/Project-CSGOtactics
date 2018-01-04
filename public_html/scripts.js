@@ -14,8 +14,8 @@ var mc = new Coordinates();
 $(document).ready(function(){  
     var canvas = $("#canvas2")[0];
     
-    canvas.width = 600;
-    canvas.height = 600;
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
     
     var rect = canvas.getBoundingClientRect();
     var ctx = canvas.getContext('2d');
@@ -40,7 +40,7 @@ $(document).ready(function(){
     $("#canvas2").on("click", function(event){
         var rect = $("#canvas2")[0].getBoundingClientRect();
         var ctx = $("#canvas2")[0].getContext('2d');
-
+        // draw a line
         if(actualTask === "drawLine"){
             if(clicked === false){ 
                 clicked = true;               
@@ -60,7 +60,7 @@ $(document).ready(function(){
                 clicked = false;
             }
         }
-        
+        // draw granades
         if(actualTask === "HE" || actualTask === "Flash" || actualTask === "Smoke"){
             var base_image = new Image();           
             switch (actualTask){
@@ -76,11 +76,11 @@ $(document).ready(function(){
                     break;                    
             }
             base_image.onload = function(){
-                ctx.drawImage(base_image, event.clientX, event.clientY - rect.top);
+                ctx.drawImage(base_image, (event.clientX - canvas.offsetLeft) * 0.2, (event.clientY - canvas.offsetTop) * 0.2);
             };
         }      
     });
-    
+    // changing maps
     $("#check").change(function(event){       
         if($("#check option:selected").val() === "dust2"){
             $("#canvas2").css("background-image", 'url("maps/dust2.jpg")');
