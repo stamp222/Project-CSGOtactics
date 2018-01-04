@@ -1,11 +1,12 @@
+html {
+    
+    height: 100%;
+}
 body {
+    height: 100%;
     background-image: url("cs.webp");
     background-size: cover;
     overflow: hidden;
-}
-
-.row button {
-    margin-top: 20px;
 }
 
 #canvas2 {
@@ -18,10 +19,11 @@ body {
 
 #canvasMenu {
     width: 20%;
-    height: 50%;
+    height: 100%;
     float: left;
     background-color: #b24c95;
     text-align: center;
+    position: absolute;
 }
 
 #canvasDiv {
@@ -33,4 +35,26 @@ body {
 
 #canvasMenu button, label{
     width: 100%;
+}
+.footer {
+    border-style: solid;
+    background: black;
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.header {
+    border-style: solid;
+    background: black;
+    float: top;
+}
+.space {
+    
+}
+
+.team {
+}
+.allButtons {
+
 }

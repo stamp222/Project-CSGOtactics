@@ -33,7 +33,12 @@ and open the template in the editor.
     <body>
         <div>
             <div id="canvasMenu">
-                <div>
+                <div class="header">
+                    <button type="button" onclick="location.href='login.html';" style="margin: 1% 1% 1% 1%; width: 47%" class="btn btn-primary btn-xs">Login</button>
+                    <button type="button" onclick="location.href='register.html';" style="margin: 1% 1% 1% 1%; width: 47%"class="btn btn-primary btn-xs">Register</button>
+                    <button type="button" onclick="location.href='register.html';" style="margin: 1% 1% 1% 1%; width: 75%"class="btn btn-primary btn-sm">Make a team</button>
+                </div>
+                <div class="team">
                     <h3>Gracze</h2>
                     <label id="player1">Adam</label>
                     <label id="player2">Jacek</label>
@@ -45,7 +50,7 @@ and open the template in the editor.
                     <button type="button" class="btn btn-danger grenade" value="Flash">Dodaj granat błyskowy</button>
                     <button type="button" class="btn btn-danger grenade" value="Smoke">Dodaj granat dymny</button>
                 </div>
-                <div>
+                <div class="allButtons">
                     <select id="check" class="form-control">
                         <option value="dust2">Dust 2</option> // selected="selected"
                         <option value="inferno">Inferno</option>
@@ -55,33 +60,15 @@ and open the template in the editor.
                         <option value="train">Train</option>
                     </select>
                 </div>
+                <div class="footer">
+                 Footer
+                </div>
             </div>
             <div id="canvasDiv">
                 <canvas id="canvas2"></canvas>
             </div>       
         </div>
-<!--        <div class="row">
-            <div class="col-md-3">
-                <h1>CS Tactics Maker</h1>
-            </div>
-            <div class="col-md-6">
-                <button type="button" class="btn btn-danger" id="drawLine">Rysuj linię.</button>
-                <button type="button" class="btn btn-danger grenade" value="HE">Dodaj granat wybuchowy</button>
-                <button type="button" class="btn btn-danger grenade" value="Flash">Dodaj granat błyskowy</button>
-                <button type="button" class="btn btn-danger grenade" value="Smoke">Dodaj granat dymny</button>
-            </div>
-            <div class="col-md-3">
-                <label>Mapa</label>
-                <select id="check" class="form-control">
-                    <option value="dust2">Dust 2</option> // selected="selected"
-                    <option value="inferno">Inferno</option>
-                    <option value="mirage">Mirage</option>
-                    <option value="cache">Cache</option>
-                    <option value="overpass">Overpass</option>
-                    <option value="train">Train</option>
-                </select>
-            </div>
-        </div>     
--->     
+        
+
     </body>
 </html>
