@@ -13,10 +13,6 @@ var mc = new Coordinates();
 
 $(document).ready(function(){  
     var canvas = $("#canvas2")[0];
-    
-    canvas.width = 600;
-    canvas.height = 600;
-    
     var rect = canvas.getBoundingClientRect();
     var ctx = canvas.getContext('2d');
     
@@ -31,6 +27,13 @@ $(document).ready(function(){
             actualTask = $(this).val();         
         }
         else console.log("Nie ma takiego granatu lub coś poszło nie tak.");  
+    });
+    $(window).on('load resize', function(){
+        alert("resize");
+        canvas = document.getElementById("canvas2");
+        canvas.height = $("#canvas2").parent().height();
+        canvas.width = $("#canvas2").parent().width();
+        
     });
     
     $("#canvas2").on("mousemove", function(event){
@@ -51,8 +54,8 @@ $(document).ready(function(){
             }
             else {
                 ctx.beginPath();
-                ctx.moveTo(mc.x, mc.y);
-                ctx.lineTo(event.clientXt, event.clientY);
+                ctx.moveTo(mc.x , mc.y);
+                ctx.lineTo(event.clientX, event.clientY);
                 console.log(`Narysowano kreskie z: x = ${mc.x}, y = ${mc.y} do ${event.clientX - rect.left} do ${event.clientY - rect.top}`);
                 ctx.lineWidth = 5;
                 ctx.stroke();
@@ -66,18 +69,19 @@ $(document).ready(function(){
             switch (actualTask){
                 case "HE":
                     base_image.src = 'icons/he.png';//img/base.png
+                    console.log("granat" , event.clientX, event.clientY, canvas.height, canvas.width);
                     break;
                 case "Flash":
                     base_image.src = 'icons/flash.png';//img/base.png
+                    console.log("granat" , event.clientX, event.clientY);
                     break;
                     
                 case "Smoke":
                     base_image.src = 'icons/smoke.png';//img/base.png
+                    console.log("granat" , event.clientX, event.clientY);
                     break;                    
             }
-            base_image.onload = function(){
-                ctx.drawImage(base_image, event.clientX, event.clientY - rect.top);
-            };
+            ctx.drawImage(base_image, event.clientX - rect.left, event.clientY);
         }      
     });
     
@@ -101,6 +105,7 @@ $(document).ready(function(){
             $("#canvas2").css("background-image", 'url("maps/cache.jpg")');
         }
 
-        ctx.clearRect(0, 0, canvas.height, canvas.width);       
+        ctx.clearRect(0, 0, $("#canvas2").parent().height(), $("#canvas2").parent().width());      
     });
 });
+
