@@ -54,8 +54,8 @@ $(document).ready(function(){
             }
             else {
                 ctx.beginPath();
-                ctx.moveTo(mc.x , mc.y);
-                ctx.lineTo(event.clientX, event.clientY);
+                ctx.moveTo(mc.x - rect.left, mc.y);
+                ctx.lineTo(event.clientX - rect.left, event.clientY);
                 console.log(`Narysowano kreskie z: x = ${mc.x}, y = ${mc.y} do ${event.clientX - rect.left} do ${event.clientY - rect.top}`);
                 ctx.lineWidth = 5;
                 ctx.stroke();
