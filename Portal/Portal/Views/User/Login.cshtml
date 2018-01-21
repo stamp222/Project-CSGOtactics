@@ -1,0 +1,89 @@
+﻿@model Portal.Models.UserLogin
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS Tactics Maker</title>
+
+    <link rel="shortcut icon" href="~/www/favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/www/css.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="~/www/scripts.js"></script>
+</head>
+<body>
+    <div>
+        <div id="canvasMenu">
+            <div class="header">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <h4>UserLogin</h4>
+                    @Html.ValidationSummary(true, "")
+                    @Html.LabelFor(model => model.EmailID)
+                    @Html.EditorFor(model => model.EmailID)
+                    @Html.ValidationMessageFor(model => model.EmailID, "")
+                    @Html.LabelFor(model => model.Password)
+                    @Html.EditorFor(model => model.Password)
+                    @Html.ValidationMessageFor(model => model.Password, "")
+                    <div>
+                        @Html.LabelFor(model => model.RememberMe)
+                        @Html.EditorFor(model => model.RememberMe)
+                        @Html.ValidationMessageFor(model => model.RememberMe, "")
+                    </div>                 
+                    <input type="submit" value="Zaloguj się" class="btn btn-default" />
+                }
+            </div>
+            <div class="team">
+                <h3>Gracze</h3>
+                <label id="player1">Adam</label>
+                <label id="player2">Jacek</label>
+                <label id="player3">Adrian</label>
+                <label id="player4">Pudzilla</label>
+                <label id="player5">Putin</label>
+                <button type="button" class="btn btn-danger" id="drawLine">Rysuj linię.</button>
+                <button type="button" class="btn btn-danger grenade" value="HE">Dodaj granat wybuchowy</button>
+                <button type="button" class="btn btn-danger grenade" value="Flash">Dodaj granat błyskowy</button>
+                <button type="button" class="btn btn-danger grenade" value="Smoke">Dodaj granat dymny</button>
+            </div>
+            <div class="allButtons">
+                <select id="check" class="form-control">
+                    <option value="dust2">Dust 2</option> // selected="selected"
+                    <option value="inferno">Inferno</option>
+                    <option value="mirage">Mirage</option>
+                    <option value="cache">Cache</option>
+                    <option value="overpass">Overpass</option>
+                    <option value="train">Train</option>
+                </select>
+            </div>
+            <div class="footer">
+                Footer
+            </div>
+        </div>
+        <div id="canvasDiv">
+            <canvas id="canvas2"></canvas>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}

@@ -1,0 +1,76 @@
+c:\users\adrian skibiński\source\repos\Portal\Portal\obj\Debug\Portal.csproj.CoreCompileInputs.cache
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\Portal.dll.config
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\Portal.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\Portal.pdb
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\EntityFramework.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\EntityFramework.SqlServer.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\Microsoft.Web.Infrastructure.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Helpers.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Mvc.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Razor.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Webpages.Deployment.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Webpages.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Webpages.Razor.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\EntityFramework.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\EntityFramework.SqlServer.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Razor.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Webpages.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Webpages.Deployment.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Webpages.Razor.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Helpers.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\bin\System.Web.Mvc.xml
+c:\users\adrian skibiński\source\repos\Portal\Portal\obj\Debug\Portal.dll
+c:\users\adrian skibiński\source\repos\Portal\Portal\obj\Debug\Portal.pdb
+C:\Users\Adrian Skibiński\source\repos\Portal\Portal\obj\Debug\Portal.csprojResolveAssemblyReference.cache
+D:\Portal Adrian\Portal\Portal\bin\Portal.dll.config
+D:\Portal Adrian\Portal\Portal\bin\Portal.dll
+D:\Portal Adrian\Portal\Portal\bin\Portal.pdb
+D:\Portal Adrian\Portal\Portal\bin\EntityFramework.dll
+D:\Portal Adrian\Portal\Portal\bin\EntityFramework.SqlServer.dll
+D:\Portal Adrian\Portal\Portal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Portal Adrian\Portal\Portal\bin\Microsoft.Web.Infrastructure.dll
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Helpers.dll
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Mvc.dll
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Razor.dll
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Webpages.Deployment.dll
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Webpages.dll
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Webpages.Razor.dll
+D:\Portal Adrian\Portal\Portal\bin\EntityFramework.xml
+D:\Portal Adrian\Portal\Portal\bin\EntityFramework.SqlServer.xml
+D:\Portal Adrian\Portal\Portal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Razor.xml
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Webpages.xml
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Webpages.Deployment.xml
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Webpages.Razor.xml
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Helpers.xml
+D:\Portal Adrian\Portal\Portal\bin\System.Web.Mvc.xml
+D:\Portal Adrian\Portal\Portal\obj\Debug\Portal.csprojResolveAssemblyReference.cache
+D:\Portal Adrian\Portal\Portal\obj\Debug\Portal.dll
+D:\Portal Adrian\Portal\Portal\obj\Debug\Portal.pdb
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\Portal.dll.config
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\Portal.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\Portal.pdb
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\EntityFramework.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\EntityFramework.SqlServer.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\Microsoft.Web.Infrastructure.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Helpers.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Mvc.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Razor.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Webpages.Deployment.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Webpages.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Webpages.Razor.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\EntityFramework.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\EntityFramework.SqlServer.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Razor.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Webpages.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Webpages.Deployment.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Webpages.Razor.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Helpers.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\bin\System.Web.Mvc.xml
+D:\Projekty\PortalCSGOtactics\Portal\Portal\obj\Debug\Portal.csprojResolveAssemblyReference.cache
+D:\Projekty\PortalCSGOtactics\Portal\Portal\obj\Debug\Portal.dll
+D:\Projekty\PortalCSGOtactics\Portal\Portal\obj\Debug\Portal.pdb
